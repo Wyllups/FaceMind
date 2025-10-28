@@ -193,8 +193,11 @@ print("Predicción:", pred)
 ## Diagrama de Clases html – FaceMind
 
 <p align="center">
-  <img src="httml.png" alt="Diagrama de Clases FaceMind" width="750">
+  <img src="IMG/httml.png" alt="Diagrama de Clases FaceMind" width="750">
+  <br>
+  <em>Diagrama de Clases del Proyecto FaceMind</em>
 </p>
+
 
 > Este diagrama muestra la arquitectura modular del sistema FaceMind, donde:
 > - **ImageProcessor** realiza el preprocesamiento ETL de las imágenes.  
