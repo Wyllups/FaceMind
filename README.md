@@ -1,4 +1,4 @@
-## 👁️ FaceMind – Clasificación Facial con Eigen-Objetos (SVD)
+## 👁️ FaceMind 
 
 **FaceMind** es un sistema de análisis facial que aplica la técnica de *Eigen-Objetos* basada en la **Descomposición en Valores Singulares (SVD)** para clasificar imágenes en dos categorías: **ojos abiertos** y **ojos cerrados**.  
 El proyecto incluye un pipeline completo de procesamiento, almacenamiento y clasificación, desarrollado en **Python** con enfoque académico y modular.
