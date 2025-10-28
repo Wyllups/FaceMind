@@ -1,0 +1,15 @@
+# FaceMind - Clasificador de Imágenes con Eigen-Objetos (SVD)
+
+# Librerías principales de procesamiento numérico y científico
+numpy==1.26.4
+scikit-learn==1.5.2
+
+# Librerías de procesamiento y carga de imágenes
+Pillow==10.4.0
+opencv-python==4.10.0.84
+
+# Librería para manipular bases de datos SQLite (incluida en Python)
+# sqlite3 está integrado en Python, no necesita instalación adicional.
+
+# Librerías opcionales para visualización (por si quieres graficar Eigen-objetos)
+matplotlib==3.9.2
