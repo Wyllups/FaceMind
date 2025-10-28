@@ -207,14 +207,14 @@ print("Predicción:", pred)
 
 ---
 
-## 👩‍💻 Créditos
+## Créditos
 
 **Autor:** Wilfredo Calderon Perez y Roger Villa Aristizabal
 
 
 ---
 
-## 🧭 Conclusión
+## Conclusión
 
 FaceMind representa una implementación práctica de los principios de **Eigenfaces**, combinando **matemática aplicada**, **procesamiento digital** y **aprendizaje automático**.  
 Permite comprender de manera didáctica cómo los **espacios reducidos de características** pueden capturar patrones visuales significativos.
