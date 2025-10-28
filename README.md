@@ -1,4 +1,4 @@
-# 🧠 FaceMind – Clasificación Facial con Eigen-Objetos (SVD)
+#👁️ FaceMind – Clasificación Facial con Eigen-Objetos (SVD)
 
 **FaceMind** es un sistema de análisis facial que aplica la técnica de *Eigen-Objetos* basada en la **Descomposición en Valores Singulares (SVD)** para clasificar imágenes en dos categorías: **ojos abiertos** y **ojos cerrados**.  
 El proyecto incluye un pipeline completo de procesamiento, almacenamiento y clasificación, desarrollado en **Python** con enfoque académico y modular.
@@ -33,14 +33,14 @@ face_mind/
 
 ---
 
-## 🎯 Objetivo del Proyecto
+## Objetivo del Proyecto
 
 Desarrollar un sistema capaz de **distinguir entre ojos abiertos y cerrados** utilizando técnicas de reducción de dimensionalidad mediante **Eigen-Objetos**.  
 El enfoque está inspirado en el modelo de *Eigenfaces* usado en reconocimiento facial, pero adaptado a una tarea específica de **detección ocular**.
 
 ---
 
-## 🧩 Metodología: Eigen-Objetos con SVD
+## Metodología: Eigen-Objetos con SVD
 
 1. **Preprocesamiento de imágenes:**
    - Conversión a escala de grises.
@@ -83,9 +83,9 @@ face_mind/data/cerrados/
 
 ---
 
-## 🚀 Modo de Uso
+## Modo de Uso
 
-### 🧱 1. Procesamiento y carga inicial
+### 1. Procesamiento y carga inicial
 Ejecuta el script principal del módulo **ImageProcessor** para generar los archivos base y la base de datos:
 
 ```bash
@@ -97,7 +97,7 @@ Esto generará:
 - Los conjuntos `X_train.npy`, `X_test.npy`, `y_train.npy`, `y_test.npy`
 - Las medias y matrices cuadradas de cada clase
 
-### 🧠 2. Entrenamiento y prueba del clasificador
+### 2. Entrenamiento y prueba del clasificador
 Luego, ejecuta el módulo del clasificador SVD:
 
 ```bash
@@ -112,7 +112,7 @@ Esto:
 Ejemplo de salida:
 ```
 Error abiertos: 12.3489 | Error cerrados: 19.2301
-🔎 Predicción final: abiertos
+ Predicción final: abiertos
 ```
 
 ### 📈 3. Visualización y ajuste
@@ -123,7 +123,7 @@ Puedes modificar:
 
 ---
 
-## 🧰 Archivos Principales
+## Archivos Principales
 
 ### `src/image_processor.py`
 Contiene la clase `ImageProcessor`, responsable del pipeline ETL (Extract–Transform–Load).  
@@ -139,7 +139,7 @@ Usa errores de reconstrucción como métrica de decisión entre clases.
 
 ---
 
-## 💾 Base de Datos SQLite
+## Base de Datos SQLite
 
 El archivo `imagenes.db` se genera automáticamente.  
 Cada registro contiene:
@@ -157,7 +157,7 @@ print(cursor.fetchall())
 
 ---
 
-## 🧪 Ejemplo de Entrenamiento Manual
+## Ejemplo de Entrenamiento Manual
 
 ```python
 from src.svd_classifier import SVDClassifier, load_data_from_db
@@ -179,26 +179,35 @@ print("Predicción:", pred)
 
 ---
 
-## 🧾 Rutas Relevantes
+## Rutas Relevantes
 
 | Tipo | Ruta | Descripción |
 |------|------|--------------|
-| 📁 Dataset | `face_mind/data/` | Carpeta raíz de imágenes |
-| 🧠 Código fuente | `face_mind/src/` | Contiene los módulos Python principales |
-| 💾 Base de datos | `face_mind/outputs/imagenes.db` | Almacena los vectores procesados |
-| 📊 Resultados | `face_mind/outputs/` | Matrices, medias y archivos `.npy` generados |
-| 📜 Requisitos | `face_mind/requirements.txt` | Dependencias del proyecto |
-| 📘 Documentación | `face_mind/README.md` | Guía detallada del sistema |
+| Dataset | `face_mind/data/` | Carpeta raíz de imágenes |
+| Código fuente | `face_mind/src/` | Contiene los módulos Python principales |
+| Base de datos | `face_mind/outputs/imagenes.db` | Almacena los vectores procesados |
+| Resultados | `face_mind/outputs/` | Matrices, medias y archivos `.npy` generados |
+| Requisitos | `face_mind/requirements.txt` | Dependencias del proyecto |
+| Documentación | `face_mind/README.md` | Guía detallada del sistema |
+
+## Diagrama de Clases html – FaceMind
+
+<p align="center">
+  <img src="httml.png" alt="Diagrama de Clases FaceMind" width="750">
+</p>
+
+> Este diagrama muestra la arquitectura modular del sistema FaceMind, donde:
+> - **ImageProcessor** realiza el preprocesamiento ETL de las imágenes.  
+> - **Database** gestiona el almacenamiento de vectores en SQLite.  
+> - **SVDClassifier** entrena modelos por clase y usa la función **custom_svd** para la descomposición.  
+
 
 ---
 
 ## 👩‍💻 Créditos
 
-**Autor:** Wilfredo Villa  
-**Colaboradores:** Equipo FaceMind – Universidad  
-**Versión:** 1.0.0  
-**Lenguaje:** Python 3.10+  
-**Licencia:** MIT
+**Autor:** Wilfredo Calderon Perez y Roger Villa Aristizabal
+
 
 ---
 
